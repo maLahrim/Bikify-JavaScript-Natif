@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script id='mapScript' src="https://maps.google.com/maps/api/js?key=AIzaSyCLOKVvGq8nsWlevMr-_HPqRKp0939QV4w"></script>
+  <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Seo : Twitter Card data -->
+  <meta name="twitter:card" content="img/logo_transparent.png">
+  <meta name="twitter:site" content="https://www.bikify.malahrim.fr/">
+  <meta name="twitter:title" content="Bikify - Réservation de vélos en ligne">
+  <meta name="twitter:description"
+    content="Bikify est un site de réservation de vélos en ligne">
+  <meta name="twitter:creator" content="Bikify">
+  <!-- Twitter summary card with large image must be at least 280x150px -->
+  <meta name="twitter:image:src" content="img/meta_img_250x150.jpg">
+  <!-- Open Graph data (facebook)-->
+  <meta property="og:title" content="Bikify - Réservation de vélos en ligne" />
+  <meta property="og:type" content="WebAgency" />
+  <meta property="og:url" content="https://www.bikify.malahrim.fr/" />
+  <meta property="og:image" content="img/meta_img_250x150.jpg" />
+  <meta property="og:description"
+    content="Bikify est un site de réservation de vélos en ligne" />
+  <!-- Style -->
+  <link href="/css/all.min.css" type="text/css" rel="stylesheet">
+  <link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <!-- Icon -->
+  <link rel="icon" href="img/favicon.ico">
+  <meta name="description" content="Bikify - Réservation de vélos en ligne" />
+  <title>Bikify - Réservation de vélos en ligne</title>
+</head>
+<body>
+  <div id="accueil_hook"></div>
+  <header id="main_header" class="container">
+    <nav id=main_nav>
+      <div id="main_menu">
+        <a href="/#accueil_hook" class="navbar-logo">
+          <img id="logo" src="/img/logo_transparent.png" alt="logo">
+        </a>
+        <img id="anime" src="/img/biking.gif" alt="">
+        <button id="menu_button" class="menu-button" type="button">
+          <span class="fas fa-bars"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <div id="main_container" class="container">
+    <section id="slider_container">
+    </section>
+    <section id='maps' class="mapGroup">
+      <div class="mapButtonContainer">
+        <button id="nantes_Btn" class="selectMapBtn ">NANTES</button>
+        <button id="lyon_Btn" class="selectMapBtn">LYON</button>
+      </div>
+      <div id="nantes"></div>
+      <div id="lyon"></div>
+      <div id="contact_hook"></div>
+    </section>
+    <section class="contact_container">
+      <form id="contact" class="form">
+        <h3>Contact</h3>
+        <fieldset>
+          <label for="nom">Nom</label>
+          <input id="nom" placeholder="Nom" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+          <label for="mail">Émail</label>
+          <input id="mail" placeholder="Email Adresse" type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <label for="tel">Téléphone</label>
+          <input id="tel" placeholder="Télephone (optional)" type="tel" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+          <label for="msg">Message</label>
+          <textarea id="msg" placeholder="Message...." tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Envoyer</button>
+        </fieldset>
+      </form>
+      <div class="contact_Info">
+        <h4>ADRESSE : 21 rue massenet, Lyon</h4>
+        <h5>EMAIL : CONTACT@MALAHRIM.FR</h5>
+          <h6>TÉLEPHONE : 06.58.40.69.65</h6>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <a href="https://bikify.malahrim.fr/#accueil">Accueil</a>
+        <a href="https://bikify.malahrim.fr/#reservation">Réservation</a>
+        <a href="https://bikify.malahrim.fr/#contact">Contact</a>
+      </div>
+      <p class="copyright">Projet démo - Copyright 2020 <a href="https://bikify.malahrim.fr" target="_blank"
+          title="Bikify">BikiFy</a></p>
+    </footer>
+  </div>
+  <script src="js/lib.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/reservation.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
